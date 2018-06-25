@@ -25,7 +25,6 @@ public class HelloController {
         return "pageSize:"+pageSize+",testName"+testName;
     }
 
-
     @Value("${content}")
     private String content ;
     @RequestMapping("/content")
@@ -34,13 +33,11 @@ public class HelloController {
         return content;
     }
 
-
     //templates的展示
     @RequestMapping(value = {"/t","/temp","/template"} ,method = RequestMethod.GET)
     public String showIndexHtml(){
         return "index";
     }
-
 
     @RequestMapping(value = {"/showIndex1"} ,method = RequestMethod.GET)
     public String showIndex1(){
