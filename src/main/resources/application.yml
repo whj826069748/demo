@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: pro
+
+testName: 花花公子
+content: "pageSize:${pageSize},testName:${testName}"
